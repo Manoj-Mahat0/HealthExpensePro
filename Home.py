@@ -43,7 +43,7 @@ def apply_custom_css():
     st.markdown(custom_css, unsafe_allow_html=True)
     
 def Main():
-    Pkl_Filename = 'C:/Users/manoj/Downloads/Health_Insurance/Models/insurance_model.sav'
+    Pkl_Filename = 'Models/insurance_model.sav'
     apply_custom_css()
     with open(Pkl_Filename, 'rb') as file:
         model = pickle.load(file)
@@ -118,7 +118,7 @@ def contact_form():
             st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-    local_css("C:/Users/manoj/Downloads/Health_Insurance/Style/style.css")
+    local_css("Style/style.css")
     
 def home_scr():
     col1, col2 = st.columns([3,1])
@@ -155,11 +155,11 @@ def home_scr():
                 st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-        local_css("C:/Users/manoj/Downloads/Health_Insurance/Style/News_style.css")
+        local_css("Style/News_style.css")
 
         
     with col2:
-        image = Image.open('C:/Users/manoj/Downloads/Health_Insurance/Images/injury-pana.png')
+        image = Image.open('Images/injury-pana.png')
         st.image(image)
         
     st.markdown("""---""")
@@ -167,7 +167,7 @@ def home_scr():
     col1, col2 = st.columns([2, 3])
 
     with col1:
-        image = Image.open('C:/Users/manoj/Downloads/Health_Insurance/Images/Visualdata-bro.png')
+        image = Image.open('Images/Visualdata-bro.png')
         st.image(image, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
     with col2:
         
@@ -193,7 +193,7 @@ def home_scr():
         st.markdown("5. **Predictive Insights:** Our platform generates personalized predictions for medical expenses, helping individuals and organizations make informed decisions.")
 
     with col2:
-        image = Image.open('C:/Users/manoj/Downloads/Health_Insurance/Images/injury-amico.png')
+        image = Image.open('Images/injury-amico.png')
         st.image(image, width="auto", use_column_width="auto", clamp=True, channels="RGB", output_format="auto")
     
     st.markdown("""---""")
@@ -201,7 +201,7 @@ def home_scr():
     col1, col2 = st.columns([1, 3])
 
     with col1:
-        image = Image.open('C:/Users/manoj/Downloads/Health_Insurance/Images/Innovation-amico.png')
+        image = Image.open('Images/Innovation-amico.png')
         st.image(image)
     with col2:
         

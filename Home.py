@@ -63,22 +63,22 @@ def Main():
     col1, col2 = st.columns(2)
     
     with col1:
-        Age = st.text_input('Age 0', value=0.0);
+        Age = st.text_input('Age [0]', value=0.0);
         
     with col2:
-        Sex = st.text_input('Sex M:0, F:1', value=0.0)
+        Sex = st.text_input('Sex [M:0, F:1]', value=0.0)
     
     with col1:
-        BMI = st.text_input('BMI 18.5 - 24.9', value=0.0)
+        BMI = st.text_input('BMI [18.5 - 24.9]', value=0.0)
     
     with col2:
-        Children = st.text_input('Children 0', value=0.0)
+        Children = st.text_input('Children [0]', value=0.0)
     
     with col1:
-        Smoker = st.text_input('Smoker Y:0, N:0', value=0.0)
+        Smoker = st.text_input('Smoker [Y:0, N:0]', value=0.0)
     
     with col2:
-        Region = st.text_input('Region SE:0, SW:1, NE:2, NW:3', value=0.0)
+        Region = st.text_input('Region [SE:0, SW:1, NE:2, NW:3]', value=0.0)
     
     
 
